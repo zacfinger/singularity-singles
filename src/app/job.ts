@@ -1,5 +1,5 @@
 export interface Job {
-    title: string,
-    href: string,
-    company: string
+    title?: string,
+    href?: string,
+    company?: string
 }

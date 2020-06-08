@@ -1,8 +1,6 @@
-<h3>{{job.company}}</h3>
-<ul>
+<ul *ngFor="let job of jobList">
     <li>
-        <a href="{{job.href}}">
-            {{job.title}}
-        </a>
+        <strong>{{job.company}}</strong> | 
+        <a href="{{job.href}}">{{job.title}}</a>
     </li>
 </ul>

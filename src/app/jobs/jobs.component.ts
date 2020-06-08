@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Job } from '../job'
+import { Job } from '../job';
+
+import jobs from '../../../../jobs.json';
+// https://jsonworld.com/demo/how-to-read-local-json-file-in-angular
+// https://www.angularjswiki.com/angular/how-to-read-local-json-files-in-angular/
 
 @Component({
   selector: 'app-jobs',
@@ -8,11 +12,7 @@ import { Job } from '../job'
 })
 export class JobsComponent implements OnInit {
 
-  job: Job = {
-    title: "Data Courier",
-    href: "https://www.dnb.com/business-directory/company-profiles.pharmakom_llc.30182b6eefd071fb35f8f25c4f2153da.html",
-    company: "Pharmakom"
-  }
+  jobList: Job[] = jobs;
 
   constructor() { }
 
