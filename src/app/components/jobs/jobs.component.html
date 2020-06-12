@@ -1,4 +1,4 @@
-<ul *ngFor="let job of jobList">
+<ul *ngFor="let job of jobList | async">
     <li>
         <strong>{{job.company}}</strong> | 
         <a href="{{job.href}}">{{job.title}}</a>
