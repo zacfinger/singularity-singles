@@ -1,2 +1,7 @@
 <h2>New Openings</h2>
+<ul>
+    <li class="text" *ngFor="let item of items | async">
+      {{item.name}}
+    </li>
+</ul>
 <app-jobs></app-jobs>
